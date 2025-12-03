@@ -1,8 +1,10 @@
 const std = @import("std");
 const context = @import("context.zig");
-const foo = @import("foo.zig");
+const task1 = @import("task1.zig");
+const task2 = @import("task2.zig");
+const task3 = @import("task3.zig");
 pub fn main() !void {
-    // Prints to stderr, ignoring potential errors.
-    std.debug.print("Context for asp\n", .{});
-    foo.run();
+    //std.debug.print("Context for asp\n", .{});
+    //task1.run();
+    try task2.run();
 }
